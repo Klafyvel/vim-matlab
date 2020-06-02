@@ -1,7 +1,7 @@
 import subprocess
 import threading
 
-import logger
+from . import logger
 
 
 __author__ = 'daeyun'

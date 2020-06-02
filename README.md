@@ -3,6 +3,9 @@ vim-matlab
 
 An alternative to Matlab's default editor for Vim users.
 
+**Note :** This is a Fork of daeyun's original project. I am currently testing it to work with python3 on ubuntu 20.04. Once I get something that works fine I'll make apull request to original repository.
+
+
 ## FAQ
 
 #### How do I run code cells (`%%` blocks)?

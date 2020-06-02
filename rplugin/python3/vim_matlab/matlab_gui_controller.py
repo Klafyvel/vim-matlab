@@ -5,9 +5,9 @@ import re
 
 import pyperclip
 
-from input_controller import disable_input
-from io_helper import find_plugin_matlab_path
-from xdotool import Xdotool
+from .input_controller import disable_input
+from .io_helper import find_plugin_matlab_path
+from .xdotool import Xdotool
 
 """
 DEPRECATED. Use matlab_cli_controller.

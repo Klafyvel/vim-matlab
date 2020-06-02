@@ -8,9 +8,9 @@ import collections
 
 import neovim
 
-from matlab_cli_controller import MatlabCliController
-from python_vim_utils import PythonVimUtils as vim_helper
-import python_vim_utils
+from .matlab_cli_controller import MatlabCliController
+from .python_vim_utils import PythonVimUtils as vim_helper
+from . import python_vim_utils
 
 
 __created__ = 'Mar 01, 2015'
@@ -146,7 +146,7 @@ class VimMatlab(object):
                               name.endswith('.m')]
 
         function_blocks = vim_helper.get_function_blocks()
-        new_filenames = [name + '.m' for name in function_blocks.keys()]
+        new_filenames = [name + '.m' for name in list(function_blocks.keys())]
 
         unused_filenames = list(set(existing_filenames) - set(new_filenames))
         for name in unused_filenames:

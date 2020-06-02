@@ -5,7 +5,7 @@ import threading
 
 import sh
 
-from command import Command
+from .command import Command
 
 
 __author__ = 'daeyun'
